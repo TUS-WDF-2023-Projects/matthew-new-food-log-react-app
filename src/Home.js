@@ -38,7 +38,6 @@ function Home() {
                         <th>Meal</th>
                         <th>Time</th>
                         <th>Date</th>
-                        <th>View</th>
                         <th>Edit</th>
                         <th>Delete</th>
                     </tr>
@@ -52,7 +51,6 @@ function Home() {
                                     <td><Link to="breakfast">{item.meal}</Link></td>
                                     <td>{item.time}</td>
                                     <td>{item.date}</td>
-                                    <td><button>View</button></td>
                                     <td><Link to="/edit"><button onClick={() => handleEdit(item.id, item.meal, item.time, item.date)}>Edit</button></Link></td>
                                     <td><button onClick={() => handleDelete(item.id)}>Delete</button></td>
                                 </tr>
