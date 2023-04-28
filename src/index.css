@@ -3,7 +3,11 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav.navbar ul li {
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
