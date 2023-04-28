@@ -18,12 +18,12 @@ function NewEntry() {
 
         // This code generates a new Unique Id and creates a new meal object with the id, meal, time and date values and adds it to an array of meals called 'Meals'. 
         const ids = uuidv4();
-        let uniqueId = ids.slice(0, 8);
+        // let uniqueId = ids.slice(0, 8);
 
-        let a = id,
-            b = meal,
-            c = time,
-            d = date;
+        let uniqueId = id,
+            a = meal,
+            b = time,
+            c = date;
 
         Meals.push({ id: uniqueId, meal: a, time: b, date: c });
 
