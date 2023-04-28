@@ -19,6 +19,10 @@ button {
   padding: 10px 20px;
 }
 
+ul-breakfast-menu {
+  list-style-type: none;
+}
+
 Table .td .a {
   background-color: darkgray;
 }
