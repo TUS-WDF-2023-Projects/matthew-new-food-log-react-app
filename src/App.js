@@ -6,7 +6,7 @@ import Breakfast from './Breakfast';
 import NewEntry from './NewEntry';
 import About from './About';
 import Navbar from './Navbar';
-import { BrowserRouter as Router, Routes, Route, Link, NavLink, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 // Created a function called 'App' that returns 'Router', 'Routes' and 'Route'. 
 function App() {
