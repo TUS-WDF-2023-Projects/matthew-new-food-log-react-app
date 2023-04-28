@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Meals from './Meals';
 import { Link, useNavigate } from 'react-router-dom';
-
+import { Table } from 'react-bootstrap';
 // Created a function called 'Home' 
 function Home() {
 
@@ -31,7 +31,7 @@ function Home() {
     return (
 
         <Fragment>
-            <table>
+            <Table className='mt-4' striped variant='dark'>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -58,7 +58,7 @@ function Home() {
                         })
                     }
                 </tbody>
-            </table>
+            </Table>
             <br />
             <Link to="/newEntry"><button>Add New Entry</button></Link>
         </Fragment>
