@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Meals from "./Meals";
 import { Link, useNavigate } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
-import { format } from "date-fns";
 
 // Created a function called 'newEntry' that uses the 'UseState' hook.
 function NewEntry() {
@@ -20,7 +18,7 @@ function NewEntry() {
         e.preventDefault();
 
         // This code generates a new Unique Id and creates a new meal object with the id, meal, time and date values and adds it to an array of meals called 'Meals'. 
-        const ids = uuidv4();
+        //const ids = uuidv4();
         // let uniqueId = ids.slice(0, 8);
 
         let uniqueId = id,
