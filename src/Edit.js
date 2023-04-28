@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Meals from "./Meals";
-import { v4 as uuid } from "uuid";
-import { Link, useNavigate } from 'react-router-dom';
-import { button, navbar, container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './index.css';
 
 // Created an 'Edit' Function that uses the 'useState' hook to create stateful variables. 
