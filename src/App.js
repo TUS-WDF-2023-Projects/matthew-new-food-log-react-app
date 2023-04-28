@@ -6,6 +6,7 @@ import Breakfast from './Breakfast';
 import NewEntry from './NewEntry';
 import About from './About';
 import Navbar from './Navbar';
+import MealEdit from './MealEdit';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 // Created a function called 'App' that returns 'Router', 'Routes' and 'Route'. 
@@ -30,6 +31,7 @@ function App() {
           <Route path='breakfast' element={<Breakfast />} />
           <Route path='about' element={<About />} />
           <Route path='navbar' element={<Navbar />} />
+          <Route path='mealedit' element={<MealEdit />} />
         </Routes>
       </Router>
     </div>
