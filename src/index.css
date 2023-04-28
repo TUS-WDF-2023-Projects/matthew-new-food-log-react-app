@@ -4,7 +4,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h3 {
+h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -35,8 +35,4 @@ Table .td .a {
 
 .form-button {
   background-color: rgb(146, 225, 220);
-}
-
-h2 {
-  float: left;
 }
