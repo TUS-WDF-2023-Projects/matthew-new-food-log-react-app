@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 
+
 // This code is used to edit a 'Meal' item. When 'onUpdate' is called it will be passed the 'uopdatedItem' which is then used to update the origional 'Item'.
 const MealEdit = ({ item, onUpdate, onCancel }) => {
     const [updatedItem, setUpdatedItem] = useState(item);
 
-    // This code is used to handle changes to input elements in a form. 
+    // This code is used to handle changes to input elements in a form and updates the state of the component. 
     const handleChange = (e) => {
         setUpdatedItem({ ...updatedItem, [e.target.name]: e.target.value });
     };
 
+    // Created a function called 'handleSubmit' which is used as an event handler for a form submission.
     const handleSubmit = (e) => {
         e.preventDefault();
         onUpdate(item.id, updatedItem);
