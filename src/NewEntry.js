@@ -36,18 +36,18 @@ function NewEntry() {
         <div>
             <from>
                 <label>ID:</label>
-                <input type="number" onChange={(e) => setId(e.target.value)}></input>
+                <input type="number" onChange={(e) => setId(e.target.value)}></input><br />
                 <label>Meal:</label>
                 <select onChange={(e) => setMeal(e.target.value)}>
                     <option>Breakfast</option>
                     <option>Snack</option>
                     <option>Lunch</option>
                     <option>Dinner</option>
-                </select>
+                </select><br />
                 <label>Time:</label>
-                <input type="time" onChange={(e) => setTime(e.target.value)}></input>
+                <input type="time" onChange={(e) => setTime(e.target.value)}></input><br />
                 <label>Date:</label>
-                <input type="date" onChange={(e) => setDate(e.target.value)}></input>
+                <input type="date" onChange={(e) => setDate(e.target.value)}></input><br />
                 <Link to="/newentry">
                     <button onClick={(e) => handleSubmit(e)} type="submit">Add New Entry</button>
                 </Link>
