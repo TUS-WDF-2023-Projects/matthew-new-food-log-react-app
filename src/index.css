@@ -12,28 +12,19 @@ h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar ul li {
+nav.navbar ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 20px;
 }
 
 ul-breakfast-menu {
   list-style-type: none;
 }
 
-Table .td .a {
-  background-color: darkgray;
-}
-
 .form {
   display: flex;
   flex-direction: column;
   border-collapse: collapse;
-}
-
-.form .input {
-  width: 30px;
 }
 
 .form-button {
@@ -98,8 +89,4 @@ button#update-button {
 
 table {
   background-color: lightgray;
-}
-
-a {
-  color: white;
 }

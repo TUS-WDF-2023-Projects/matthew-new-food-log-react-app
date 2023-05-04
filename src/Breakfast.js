@@ -7,8 +7,7 @@ const Breakfast = () => {
 
     const [data, setData] = useState([
 
-        { id: 1, fruit: "Apple", grains: "Oatmeal", drink: "Coffee" },
-        { id: 2, fruit: "Banana", grains: "Porridge", drink: "Tea" },
+        { id: 1, fruit: "Apple", cereal: " ", grains: "Oatmeal", drink: "Coffee", other: "" },
 
     ]);
 
@@ -34,8 +33,10 @@ const Breakfast = () => {
                     <tr>
                         <th>ID</th>
                         <th>Fruit</th>
+                        <th>Cereal</th>
                         <th>Grains</th>
                         <th>Drink</th>
+                        <th>Other</th>
                         <th>Edit</th>
                     </tr>
                 </thead>
@@ -44,8 +45,10 @@ const Breakfast = () => {
                         <tr key={item.id}>
                             <td>{item.id}</td>
                             <td>{item.fruit}</td>
+                            <td>{item.cereal}</td>
                             <td>{item.grains}</td>
                             <td>{item.drink}</td>
+                            <td>{item.other}</td>
                             <td>
                                 <button id="edit-button" onClick={() => handleEdit(item)}>Edit</button>
                             </td>

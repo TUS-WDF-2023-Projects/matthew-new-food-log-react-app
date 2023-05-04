@@ -24,6 +24,7 @@ const MealEdit = ({ item, onUpdate, onCancel }) => {
             <br />
             <label htmlFor="fruit">Fruit:</label><br />
             <select id="fruit" name="fruit" value={updatedItem.fruit} onChange={handleChange}>
+                <option>None</option>
                 <option>Apple</option>
                 <option>Orange</option>
                 <option>Banana</option>
@@ -34,6 +35,8 @@ const MealEdit = ({ item, onUpdate, onCancel }) => {
             <br />
             <label htmlFor="grains">Grains:</label><br />
             <select id="grains" name="grains" value={updatedItem.grains} onChange={handleChange}>
+                <option>None</option>
+                <option>Toast</option>
                 <option>Quinoa</option>
                 <option>Amaranth</option>
                 <option>Kamut</option>
@@ -41,14 +44,28 @@ const MealEdit = ({ item, onUpdate, onCancel }) => {
                 <option>Buckwheat</option>
             </select>
             <br />
+            <label htmlFor="Cereal">Ceareal:</label><br />
+            <select id="cereal" name="cereal" value={updatedItem.cereal} onChange={handleChange}>
+                <option>None</option>
+                <option>Rice Crispies</option>
+                <option>Cornflakes</option>
+                <option>Wheatabix</option>
+                <option>Frosties</option>
+                <option>Cheerios</option>
+            </select><br />
             <label htmlFor="drink">Drink:</label><br />
             <select id="drink" name="drink" value={updatedItem.drink} onChange={handleChange}>
+                <option>None</option>
                 <option>Tea</option>
                 <option>Coffee</option>
                 <option>Orange Juice</option>
                 <option>Smoothie</option>
                 <option>Water</option>
             </select>
+            <br />
+            <label htmlFor="other">Other:</label><br />
+            <input type="text" id="other" name="other" placeholder="Enter Other Option" value={updatedItem.other} onChange={handleChange}>
+            </input>
             <br /><br />
             <button type="submit">Save</button>
             <button type="button" onClick={onCancel}>Cancel</button>
