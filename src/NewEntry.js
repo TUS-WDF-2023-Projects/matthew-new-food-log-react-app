@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Meals from "./Meals";
 import { Link, useNavigate } from "react-router-dom";
+import Form from "react-bootstrap/Form";
 
 // Created a function called 'newEntry' that uses the 'UseState' hook.
 function NewEntry() {
@@ -34,24 +35,26 @@ function NewEntry() {
 
     return (
         <div>
-            <from>
-                <label>ID:</label>
-                <input type="number" onChange={(e) => setId(e.target.value)}></input><br />
-                <label>Meal:</label>
-                <select onChange={(e) => setMeal(e.target.value)}>
-                    <option>Breakfast</option>
-                    <option>Snack</option>
-                    <option>Lunch</option>
-                    <option>Dinner</option>
-                </select><br />
-                <label>Time:</label>
-                <input type="time" onChange={(e) => setTime(e.target.value)}></input><br />
-                <label>Date:</label>
-                <input type="date" onChange={(e) => setDate(e.target.value)}></input><br />
-                <Link to="/newentry">
-                    <button onClick={(e) => handleSubmit(e)} type="submit">Add New Entry</button>
-                </Link>
-            </from>
+            <Form>
+                <Form.Group className="mb-3">
+                    <label>ID:</label>
+                    <input type="number" onChange={(e) => setId(e.target.value)}></input><br />
+                    <label>Meal:</label>
+                    <select onChange={(e) => setMeal(e.target.value)}>
+                        <option>Breakfast</option>
+                        <option>Snack</option>
+                        <option>Lunch</option>
+                        <option>Dinner</option>
+                    </select><br />
+                    <label>Time:</label>
+                    <input type="time" onChange={(e) => setTime(e.target.value)}></input><br />
+                    <label>Date:</label>
+                    <input type="date" onChange={(e) => setDate(e.target.value)}></input><br />
+                    <Link to="/newentry">
+                        <button onClick={(e) => handleSubmit(e)} type="submit">Add New Entry</button>
+                    </Link>
+                </Form.Group>
+            </Form>
         </div>
     )
 }
