@@ -81,8 +81,8 @@ select {
   color: black;
 }
 
-div.links {
-  text-align: right;
+nav.navbar a {
+  color: white;
 }
 
 button#delete-button {
