@@ -34,6 +34,9 @@ function App() {
           <Route path='mealedit' element={<MealEdit />} />
         </Routes>
       </Router>
+      <footer>
+        <button id="join-now">Join Now</button>
+      </footer>
     </div>
 
   );

@@ -91,6 +91,16 @@ button#home-button {
   background-color: rgb(232, 35, 97);
 }
 
+button#join-now {
+  background-color: blueviolet;
+}
+
 table {
   background-color: lightgray;
+}
+
+footer {
+  height: 350px;
+  background-color: black;
+  color: white;
 }
