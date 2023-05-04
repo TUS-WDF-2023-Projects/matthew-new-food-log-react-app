@@ -12,11 +12,6 @@ h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-button {
-  background-color: rgb(24, 23, 23);
-  color: white;
-}
-
 .navbar ul li {
   list-style-type: none;
   display: inline-block;
