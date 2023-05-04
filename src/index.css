@@ -109,3 +109,7 @@ footer {
 div.app {
   padding-bottom: 300px;
 }
+
+div.footer-button {
+  padding-top: 100px;
+}

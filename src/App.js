@@ -35,7 +35,9 @@ function App() {
         </Routes>
       </Router>
       <footer>
-        <button id="join-now">Join Now</button>
+        <div className="footer-button">
+          <button id="join-now">Join Now</button>
+        </div>
       </footer>
     </div>
 
