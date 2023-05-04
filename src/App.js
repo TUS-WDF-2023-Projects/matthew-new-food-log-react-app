@@ -34,9 +34,6 @@ function App() {
           <Route path='mealedit' element={<MealEdit />} />
         </Routes>
       </Router>
-      <footer>
-
-      </footer>
     </div>
 
   );
