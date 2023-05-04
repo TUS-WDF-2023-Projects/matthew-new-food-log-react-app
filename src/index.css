@@ -64,3 +64,19 @@ form select#drink {
   background-color: white;
   color: black;
 }
+
+input {
+  width: 500px;
+  background-color: white;
+  color: black;
+}
+
+select {
+  width: 500px;
+  background-color: white;
+  color: black;
+}
+
+div.links {
+  text-align: right;
+}

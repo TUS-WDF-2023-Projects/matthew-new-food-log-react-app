@@ -37,19 +37,19 @@ function NewEntry() {
         <div>
             <Form>
                 <Form.Group className="mb-3">
-                    <label>ID:</label>
+                    <label>ID:</label><br />
                     <input type="number" onChange={(e) => setId(e.target.value)}></input><br />
-                    <label>Meal:</label>
+                    <label>Meal:</label><br />
                     <select onChange={(e) => setMeal(e.target.value)}>
                         <option>Breakfast</option>
                         <option>Snack</option>
                         <option>Lunch</option>
                         <option>Dinner</option>
                     </select><br />
-                    <label>Time:</label>
+                    <label>Time:</label><br />
                     <input type="time" onChange={(e) => setTime(e.target.value)}></input><br />
-                    <label>Date:</label>
-                    <input type="date" onChange={(e) => setDate(e.target.value)}></input><br />
+                    <label>Date:</label><br />
+                    <input type="date" onChange={(e) => setDate(e.target.value)}></input><br /><br />
                     <Link to="/newentry">
                         <button onClick={(e) => handleSubmit(e)} type="submit">Add New Entry</button>
                     </Link>

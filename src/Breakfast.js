@@ -36,11 +36,13 @@ const Breakfast = () => {
                         <th>Fruit</th>
                         <th>Grains</th>
                         <th>Drink</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     {data.map((item) => (
                         <tr key={item.id}>
+                            <td>{item.id}</td>
                             <td>{item.fruit}</td>
                             <td>{item.grains}</td>
                             <td>{item.drink}</td>
