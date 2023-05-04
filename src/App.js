@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Router>
         <header>
-          <h1>My Food Log</h1>
+          <h1>MY FOOD LOG</h1>
           <Navbar>
             <ul>
               <li><Link to="/">Home</Link></li>
