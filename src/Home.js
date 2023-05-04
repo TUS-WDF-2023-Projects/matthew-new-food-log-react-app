@@ -31,36 +31,38 @@ function Home() {
     return (
 
         <Fragment>
-            <Table className='mt-4' striped variant='dark'>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Meal</th>
-                        <th>Time</th>
-                        <th>Date</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        Meals.map((item) => {
-                            return (
-                                <tr>
-                                    <td><Link to="breakfast">{item.id}</Link></td>
-                                    <td><Link to="breakfast">{item.meal}</Link></td>
-                                    <td>{item.time}</td>
-                                    <td>{item.date}</td>
-                                    <td><Link to="/edit"><button id="edit-button" onClick={() => handleEdit(item.id, item.meal, item.time, item.date)}>Edit</button></Link></td>
-                                    <td><button id="delete-button" onClick={() => handleDelete(item.id)}>Delete</button></td>
-                                </tr>
-                            )
-                        })
-                    }
-                </tbody>
-            </Table>
-            <br />
-            <Link to="/newEntry"><button id="new-entry-button">Add New Entry</button></Link>
+            <main>
+                <Table className='mt-4' striped variant='dark'>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Meal</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            Meals.map((item) => {
+                                return (
+                                    <tr>
+                                        <td><Link to="breakfast">{item.id}</Link></td>
+                                        <td><Link to="breakfast">{item.meal}</Link></td>
+                                        <td>{item.time}</td>
+                                        <td>{item.date}</td>
+                                        <td><Link to="/edit"><button id="edit-button" onClick={() => handleEdit(item.id, item.meal, item.time, item.date)}>Edit</button></Link></td>
+                                        <td><button id="delete-button" onClick={() => handleDelete(item.id)}>Delete</button></td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </Table>
+                <br />
+                <Link to="/newEntry"><button id="new-entry-button">Add New Entry</button></Link>
+            </main>
         </Fragment>
     )
 }
