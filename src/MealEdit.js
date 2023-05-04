@@ -23,14 +23,33 @@ const MealEdit = ({ item, onUpdate, onCancel }) => {
             <input type="number" id="id" name="id" value={updatedItem.id} onChange={handleChange} />
             <br />
             <label htmlFor="fruit">Fruit:</label><br />
-            <input type="text" id="fruit" name="fruit" value={updatedItem.fruit} onChange={handleChange} />
+            <select id="fruit" name="fruit" value={updatedItem.fruit} onChange={handleChange}>
+                <option>Apple</option>
+                <option>Orange</option>
+                <option>Banana</option>
+                <option>Strawberries</option>
+                <option>Watermelon</option>
+                <option>Kiwi</option>
+            </select>
             <br />
             <label htmlFor="grains">Grains:</label><br />
-            <input type="text" id="grains" name="grains" value={updatedItem.grains} onChange={handleChange} />
+            <select id="grains" name="grains" value={updatedItem.grains} onChange={handleChange}>
+                <option>Quinoa</option>
+                <option>Amaranth</option>
+                <option>Kamut</option>
+                <option>Millet</option>
+                <option>Buckwheat</option>
+            </select>
             <br />
             <label htmlFor="drink">Drink:</label><br />
-            <input type="text" id="drink" name="drink" value={updatedItem.drink} onChange={handleChange} />
-            <br />
+            <select id="drink" name="drink" value={updatedItem.drink} onChange={handleChange}>
+                <option>Tea</option>
+                <option>Coffee</option>
+                <option>Orange Juice</option>
+                <option>Smoothie</option>
+                <option>Water</option>
+            </select>
+            <br /><br />
             <button type="submit">Save</button>
             <button type="button" onClick={onCancel}>Cancel</button>
         </Form>
