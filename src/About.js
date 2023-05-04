@@ -18,7 +18,7 @@ const About = () => {
 
                 3. Is it free to download?<br />
 
-                Yes, my food log is completly free for users to download.
+                Yes, my food log is completly free for users to download.<br /><br />
 
             </p>
             <Link to="/"><button id="home-button">Home</button></Link>
