@@ -28,8 +28,8 @@ const Breakfast = () => {
 
     return (
         <div class="container">
-            <h2> Today's Breakfast</h2><br />
-            <Table stripped variant='dark' className='breakfast-menu'>
+            <h2>Today's Breakfast</h2><br />
+            <Table className='mt-4' stripped variant='dark'>
                 <thead>
                     <tr>
                         <th>ID</th>

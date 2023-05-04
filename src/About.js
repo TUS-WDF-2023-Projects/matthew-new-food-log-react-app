@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const About = () => {
     return (
         <div class="about-container">
-            <p>Welcome to my food log.<br /><br />
+            <h2>Welcome to my food log!</h2><br /><br />
 
-                FAQ's<br /><br />
+            <p>FAQ's<br /><br />
 
                 1. What is My Food Log?<br />
 
