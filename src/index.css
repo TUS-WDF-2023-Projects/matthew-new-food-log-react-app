@@ -87,6 +87,10 @@ button#update-button {
   background-color: rgb(255, 100, 28);
 }
 
+button#home-button {
+  background-color: rgb(232, 35, 97);
+}
+
 table {
   background-color: lightgray;
 }

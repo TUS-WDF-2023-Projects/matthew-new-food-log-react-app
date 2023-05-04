@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Table } from 'react-bootstrap';
 import MealEdit from './MealEdit';
+import { Link } from 'react-router-dom';
 
 // Created a function called 'Breakfast'. This function uses the 'useState' hook to declare a state variable called 'data'.
 const Breakfast = () => {
@@ -59,6 +60,8 @@ const Breakfast = () => {
             {editItem && (
                 <MealEdit item={editItem} onUpdate={handleUpdate} onCancel={() => setEditItem(null)} />
             )}
+            <br />
+            <Link to="/"><button id="home-button">Home</button></Link>
         </div>
     );
 };
