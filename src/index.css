@@ -5,11 +5,14 @@
 }
 
 header {
-  height: 150px;
+  height: 100px;
 }
 
 main {
   padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
 }
 
 h1 {
@@ -79,6 +82,10 @@ nav.navbar a {
   color: white;
 }
 
+nav.navbar {
+  padding-left: 650px;
+}
+
 button#delete-button {
   background-color: red;
 }
@@ -120,4 +127,9 @@ div.app {
 
 div.footer-button {
   padding-top: 100px;
+}
+
+div.container {
+  padding-left: 40px;
+  padding-right: 40px;
 }

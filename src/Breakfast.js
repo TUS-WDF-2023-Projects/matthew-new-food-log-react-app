@@ -8,7 +8,7 @@ const Breakfast = () => {
 
     const [data, setData] = useState([
 
-        { id: 1, fruit: "Apple", cereal: " ", grains: "Oatmeal", drink: "Coffee", other: "" },
+        { id: 1, fruit: "Apple", cereal: "Rice Crispies", grains: "Oatmeal", drink: "Coffee", other: "None" },
 
     ]);
 
@@ -27,7 +27,7 @@ const Breakfast = () => {
 
 
     return (
-        <div class="container-header">
+        <div class="container">
             <h2> Today's Breakfast</h2><br />
             <Table stripped variant='dark' className='breakfast-menu'>
                 <thead>
