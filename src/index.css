@@ -40,3 +40,27 @@ Table .td .a {
 .form-button {
   background-color: rgb(146, 225, 220);
 }
+
+form input#id {
+  width: 500px;
+  background-color: white;
+  color: black;
+}
+
+form select#fruit {
+  width: 500px;
+  background-color: white;
+  color: black;
+}
+
+form select#grains {
+  width: 500px;
+  background-color: white;
+  color: black;
+}
+
+form select#drink {
+  width: 500px;
+  background-color: white;
+  color: black;
+}
