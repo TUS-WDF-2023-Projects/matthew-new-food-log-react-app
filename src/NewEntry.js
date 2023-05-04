@@ -51,7 +51,7 @@ function NewEntry() {
                     <label>Date:</label><br />
                     <input type="date" onChange={(e) => setDate(e.target.value)}></input><br /><br />
                     <Link to="/newentry">
-                        <button onClick={(e) => handleSubmit(e)} type="submit">Add New Entry</button>
+                        <button id="new-entry-button" onClick={(e) => handleSubmit(e)} type="submit">Add New Entry</button>
                     </Link>
                 </Form.Group>
             </Form>

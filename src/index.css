@@ -4,6 +4,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+  padding-top: 10px;
+}
+
 h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -79,4 +83,28 @@ select {
 
 div.links {
   text-align: right;
+}
+
+button#delete-button {
+  background-color: red;
+}
+
+button#edit-button {
+  background-color: rgb(47, 139, 237);
+}
+
+button#new-entry-button {
+  background-color: rgb(47, 219, 133);
+}
+
+button#update-button {
+  background-color: rgb(255, 100, 28);
+}
+
+table {
+  background-color: lightgray;
+}
+
+a {
+  color: white;
 }

@@ -42,20 +42,20 @@ function Edit() {
     return (
         <div>
             <from style={{}} >
-                <label>ID:</label>
+                <label>ID:</label><br />
                 <input type="number" onChange={(e) => setId(e.target.value)}></input><br /><br />
-                <label>Meal:</label>
+                <label>Meal:</label><br />
                 <select onChange={(e) => setMeal(e.target.value)}>
                     <option>Breakfast</option>
                     <option>Snack</option>
                     <option>Lunch</option>
                     <option>Dinner</option>
                 </select><br /><br />
-                <label>Time:</label>
+                <label>Time:</label><br />
                 <input type="time" onChange={(e) => setTime(e.target.value)}></input><br /><br />
-                <label>Date:</label>
+                <label>Date:</label><br />
                 <input type="date" onChange={(e) => setDate(e.target.value)}></input><br /><br />
-                <button onClick={(e) => handleSubmit(e)} type="submit">Update</button>
+                <button id="update-button" onClick={(e) => handleSubmit(e)} type="submit">Update</button>
             </from>
         </div>
     )

@@ -52,7 +52,7 @@ function Home() {
                                     <td>{item.time}</td>
                                     <td>{item.date}</td>
                                     <td><Link to="/edit"><button id="edit-button" onClick={() => handleEdit(item.id, item.meal, item.time, item.date)}>Edit</button></Link></td>
-                                    <td><button onClick={() => handleDelete(item.id)}>Delete</button></td>
+                                    <td><button id="delete-button" onClick={() => handleDelete(item.id)}>Delete</button></td>
                                 </tr>
                             )
                         })
@@ -60,7 +60,7 @@ function Home() {
                 </tbody>
             </Table>
             <br />
-            <Link to="/newEntry"><button>Add New Entry</button></Link>
+            <Link to="/newEntry"><button id="new-entry-button">Add New Entry</button></Link>
         </Fragment>
     )
 }

@@ -36,7 +36,7 @@ const Breakfast = () => {
                         <th>Fruit</th>
                         <th>Grains</th>
                         <th>Drink</th>
-                        <th>Action</th>
+                        <th>Edit</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,7 +47,7 @@ const Breakfast = () => {
                             <td>{item.grains}</td>
                             <td>{item.drink}</td>
                             <td>
-                                <button onClick={() => handleEdit(item)}>Edit</button>
+                                <button id="edit-button" onClick={() => handleEdit(item)}>Edit</button>
                             </td>
                         </tr>
                     ))}
