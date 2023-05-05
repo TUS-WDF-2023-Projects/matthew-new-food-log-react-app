@@ -36,7 +36,7 @@ function App() {
       </Router>
       <footer>
         <div className="footer-button">
-          <button id="join-now">Join Now</button>
+          <button id="join-now">Try Now</button>
         </div>
       </footer>
     </div>
