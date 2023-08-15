@@ -19,7 +19,7 @@ const MealEntries = ({ meals, onDelete }) => {
                 </tr>
             </thead>
             <tbody>
-                {meals.map(item => (
+                {meals.map((item) => (
                     <tr key={item.id}>
                         <td>{item.id}</td>
                         <td>{item.meal}</td>
@@ -27,7 +27,7 @@ const MealEntries = ({ meals, onDelete }) => {
                         <td>{item.time}</td>
                         <td>{item.price}</td>
                         <td>
-                            <Link to={'/meals/${item.id}'}>View</Link>
+                            <Link to={`/meals/${item.id}`}>View</Link>
                             <button onClick={() => handleDelete(item.id)}>Delete</button>
                         </td>
                     </tr>
