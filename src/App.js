@@ -32,10 +32,8 @@ const meals = [
   }
 ];
 
-const App = () => {
-  return (
-    <div>App Test</div>
-  )
+function App() {
+
 }
 
 export default App;
