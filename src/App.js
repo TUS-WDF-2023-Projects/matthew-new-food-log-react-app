@@ -1,6 +1,8 @@
 import './App.css';
 import React, { useState } from 'react';
 import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom';
+import MealEntries from './Components/MealEntries';
+import NewMealEntryForm from './Components/NewMealEntryForm';
 
 const meals = [
   {
@@ -45,20 +47,29 @@ function App() {
     setData([...data, newMealEntry]);
   };
 
+  const DeleteEntry = (entryID) => {
+    let updatedEntries = data.filter((entry) => (entry.id !== entryID));
+    setData(updatedEntries);
+  };
+
   return (
     <Router>
       <div>
         <nav>
           <ul>
-            <li></li>
+            <li>
+              <Link to="/NewMealEntryForm"><button>Add New Entry</button></Link>
+            </li>
           </ul>
         </nav>
         <Routes>
+          <Route path='/NewMealEntryForm' Component={NewMealEntryForm} />
           <Route>
 
           </Route>
         </Routes>
       </div>
+      <MealEntries meals={meals} onDelete={DeleteEntry} />
     </Router>
 
   )

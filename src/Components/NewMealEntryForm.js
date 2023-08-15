@@ -10,3 +10,5 @@ const NewMealEntryForm = ({ onSubmitHandler }) => {
         }
     };
 }
+
+export default NewMealEntryForm;
