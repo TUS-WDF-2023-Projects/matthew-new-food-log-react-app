@@ -37,6 +37,7 @@ const MealEntries = ({ meals, onDelete }) => {
                     ))}
                 </tbody>
             </Table>
+            <button>Add New Entry</button>
         </div>
     )
 };

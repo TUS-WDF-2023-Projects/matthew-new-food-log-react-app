@@ -59,7 +59,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/NewMealEntryForm"><button>Add New Entry</button></Link>
+              {/* <Link to="/NewMealEntryForm"><button>Add New Entry</button></Link> */}
             </li>
           </ul>
         </nav>
