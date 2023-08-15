@@ -10,7 +10,7 @@ const MealEntries = ({ meals, onDelete }) => {
     return (
         <div className="text-center">
             <h1>Matthew's Food Log</h1><br />
-            <Table striped bordered>
+            <Table className="table-component" striped bordered>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -30,7 +30,7 @@ const MealEntries = ({ meals, onDelete }) => {
                             <td>{item.time}</td>
                             <td>{item.price}</td>
                             <td>
-                                <Link to={`/meals/${item.id}`}><button>View</button></Link>
+                                <Link to={`/meals/${item.id}`}><button className="btn-view">View</button>{' '}</Link>
                                 <button className="btn btn-sm btn-danger" onClick={() => handleDelete(item.id)}>Delete</button>
                             </td>
                         </tr>
