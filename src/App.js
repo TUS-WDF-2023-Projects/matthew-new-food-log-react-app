@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react'
+import React, { useState } from 'react'
 
 const meals = [
   {
@@ -33,6 +33,7 @@ const meals = [
 ];
 
 function App() {
+  const [data, setData] = useState(meals);
 
 }
 
