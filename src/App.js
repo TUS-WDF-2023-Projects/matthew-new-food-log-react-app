@@ -67,6 +67,7 @@ function App() {
         <Routes>
           <Route path='/NewMealEntryForm' Component={NewMealEntryForm} />
           <Route path='/SingleMealEntry' Component={SingleMealEntry} />
+          {/* <Route path="/meals/:id"><SingleMealEntry /></Route> */}
           <Route>
 
           </Route>
