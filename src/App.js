@@ -65,9 +65,12 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/NewMealEntryForm" element={<NewMealEntryForm />} />
-          <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} onDelete={DeleteEntry} />} />
+          {/* <Route path="/NewMealEntryForm" element={<NewMealEntryForm />} /> */}
+          {/* <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} onDelete={DeleteEntry} />} /> */}
+          {/* <Route path="/" element={<MealEntries meals={data} onDelete={DeleteEntry} />} /> */}
           <Route path="/" element={<MealEntries meals={data} onDelete={DeleteEntry} />} />
+          <Route path="/NewMealEntryForm" element={<NewMealEntryForm addNewMeal={addNewMeal} />} />
+          <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} />} />
         </Routes>
       </div>
       {/* <MealEntries meals={meals} onDelete={DeleteEntry} /> */}
