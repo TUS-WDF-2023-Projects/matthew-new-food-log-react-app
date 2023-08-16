@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom';
 import MealEntries from './Components/MealEntries';
 import NewMealEntryForm from './Components/NewMealEntryForm';
 import './Components/App.css';
+import SingleMealEntry from './Components/SingleMealEntry';
 
 const meals = [
   {
@@ -65,6 +66,7 @@ function App() {
         </nav>
         <Routes>
           <Route path='/NewMealEntryForm' Component={NewMealEntryForm} />
+          <Route path='/SingleMealEntry' Component={SingleMealEntry} />
           <Route>
 
           </Route>
