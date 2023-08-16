@@ -65,15 +65,12 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path='/NewMealEntryForm' Component={NewMealEntryForm} />
-          <Route path='/SingleMealEntry' Component={SingleMealEntry} />
-          {/* <Route path="/meals/:id"><SingleMealEntry /></Route> */}
-          <Route>
-
-          </Route>
+          <Route path="/NewMealEntryForm" element={<NewMealEntryForm />} />
+          <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} onDelete={DeleteEntry} />} />
+          <Route path="/" element={<MealEntries meals={data} onDelete={DeleteEntry} />} />
         </Routes>
       </div>
-      <MealEntries meals={meals} onDelete={DeleteEntry} />
+      {/* <MealEntries meals={meals} onDelete={DeleteEntry} /> */}
     </Router>
 
   )
