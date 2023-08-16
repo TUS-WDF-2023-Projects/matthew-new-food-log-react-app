@@ -3,18 +3,21 @@ import { useParams } from 'react-router-dom';
 
 const SingleMealEntry = ({ meals }) => {
 
-    const urlParameters = useParams();
+    // const urlParameters = useParams();
+    const { id } = useParams();
 
-    let mealToDisplay = meals.find((item) => (
-        item.id === Number(urlParameters.mealID)
-    ));
+    // let mealToDisplay = meals.find((item) => (
+    //     item.id === Number(urlParameters.mealID)
+    // ));
+    const selectedMeal = meals.find(item => item.id === Number(id));
 
     return (
         <div>
-            {mealToDisplay.meal} Contains...<br />
-            Date: {mealToDisplay.date} <br />
-            Time: {mealToDisplay.time} <br />
-            Price: {mealToDisplay.price}<br />
+            <h2>Meal Details</h2>
+            {selectedMeal.meal} Contains...<br />
+            Date: {selectedMeal.date} <br />
+            Time: {selectedMeal.time} <br />
+            Price: {selectedMeal.price}<br />
         </div>
     )
 
