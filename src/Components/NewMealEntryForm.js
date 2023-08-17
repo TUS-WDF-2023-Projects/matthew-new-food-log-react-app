@@ -59,7 +59,13 @@ const NewMealEntryForm = ({ addNewMeal }) => {
             <form onSubmit={handleSubmit}>
                 <label>
                     Meal:
-                    <input type="text" value={meal} onChange={handleMealChange} />
+                    <select type="text" value={meal} onChange={handleMealChange}>
+                        <option value="">Select A Meal</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Snack">Snack</option>
+                        <option value="Dinner">Dinner</option>
+                    </select>
                 </label>
                 <br />
                 <label>
