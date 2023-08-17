@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
-import SingleMealEntry from "./SingleMealEntry";
 
 const MealEntries = ({ meals, onDelete }) => {
     const handleDelete = (e) => {

@@ -1,10 +1,12 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom';
 import MealEntries from './Components/MealEntries';
 import NewMealEntryForm from './Components/NewMealEntryForm';
 import './Components/App.css';
 import SingleMealEntry from './Components/SingleMealEntry';
+
+const LOCAL_STORAGE_KEY = 'mealEntries';
 
 const meals = [
   {
