@@ -73,7 +73,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                             />
                         </div>
                         <button onClick={handleUpdateClick}>Update</button>
-                        <Link to={`/SingleMealEntry/${id}`}>Cancel</Link>
+                        <Link to={"/"}><button>Cancel</button></Link>
                     </form>
                 </div>
             ) : (
