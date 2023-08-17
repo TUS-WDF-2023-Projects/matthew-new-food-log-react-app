@@ -86,15 +86,5 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
         </div>
     );
 };
-// <div>
-//     <h2>Meal Details</h2>
-//     {selectedMeal.meal} Contains...<br />
-//     Date: {selectedMeal.date} <br />
-//     Time: {selectedMeal.time} <br />
-//     Price: {selectedMeal.price}<br />
-// </div>
-//     )
-
-// };
 
 export default SingleMealEntry;
