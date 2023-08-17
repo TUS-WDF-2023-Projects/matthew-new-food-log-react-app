@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
-const NewMealEntryForm = ({ onSave }) => {
+const NewMealEntryForm = ({ addNewMeal }) => {
     const [meal, setMeal] = useState('');
     const [time, setTime] = useState('');
     const [date, setDate] = useState('');
     const [price, setPrice] = useState('');
+
+    const navigate = useNavigate();
 
     const handleMealChange = (event) => {
         setMeal(event.target.value);
@@ -24,7 +27,19 @@ const NewMealEntryForm = ({ onSave }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        onSave({ meal, time, date, price });
+        // onSave({ meal, time, date, price });
+
+        // Create a new Object Entry
+
+        const newEntry = {
+            meal,
+            time,
+            date,
+            price: parseFloat(price),
+        };
+
+        // Call the addNewMeal function to save the new entry
+        addNewMeal(newEntry);
 
         // Reset fields
 
@@ -32,6 +47,10 @@ const NewMealEntryForm = ({ onSave }) => {
         setDate('');
         setTime('');
         setPrice('');
+
+        // Navigate back to the home page ("/")
+        navigate('/');
+
     };
 
     return (
@@ -59,6 +78,7 @@ const NewMealEntryForm = ({ onSave }) => {
                 </label>
                 <br />
                 <button type="submit">Submit</button>
+                <Link to="/">Cancel</Link>
             </form>
         </div>
     );
