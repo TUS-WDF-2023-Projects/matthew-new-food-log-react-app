@@ -54,6 +54,13 @@ function App() {
     setData(updatedEntries);
   };
 
+  const updateMeal = (updatedMeal) => {
+    const updatedMeals = data.map((meal) =>
+      meal.id === updatedMeal.id ? updatedMeal : meal
+    );
+    setData(updatedMeals);
+  }
+
   return (
     <Router>
       <div>
@@ -70,7 +77,7 @@ function App() {
           {/* <Route path="/" element={<MealEntries meals={data} onDelete={DeleteEntry} />} /> */}
           <Route path="/" element={<MealEntries meals={data} onDelete={DeleteEntry} />} />
           <Route path="/NewMealEntryForm" element={<NewMealEntryForm addNewMeal={addNewMeal} />} />
-          <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} />} />
+          <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} onUpdate={updateMeal} />} />
           <Route path="/NewMealEntryForm" element={<NewMealEntryForm />} />
         </Routes>
       </div>
