@@ -35,7 +35,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
             meal,
             time,
             date,
-            price: parseFloat(price),
+            price,
         };
 
         // Call the addNewMeal function to save the new entry
