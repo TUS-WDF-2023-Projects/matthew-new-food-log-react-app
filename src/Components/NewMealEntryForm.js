@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const NewMealEntryForm = () => {
+const NewMealEntryForm = ({ onSave }) => {
     const [meal, setMeal] = useState('');
     const [time, setTime] = useState('');
     const [date, setDate] = useState('');
@@ -24,8 +24,14 @@ const NewMealEntryForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Here you can perform the logic to save the new meal entry, e.g. send it to an API or update a state.
-        // You can access the meal, time, date, and price values from the corresponding state variables.
+        onSave({ meal, time, date, price });
+
+        // Reset fields
+
+        setMeal('');
+        setDate('');
+        setTime('');
+        setPrice('');
     };
 
     return (
