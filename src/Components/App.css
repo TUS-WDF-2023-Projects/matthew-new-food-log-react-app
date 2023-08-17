@@ -1,3 +1,9 @@
 .btn-view {
     margin-right: 10px;
 }
+
+.container {
+    float: center;
+    height: auto;
+    width: fit-content;
+}

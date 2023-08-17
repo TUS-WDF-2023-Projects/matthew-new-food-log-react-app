@@ -54,7 +54,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
     };
 
     return (
-        <div>
+        <div className='container'>
             <h2>New Meal Entry Form</h2>
             <form onSubmit={handleSubmit}>
                 <label>
