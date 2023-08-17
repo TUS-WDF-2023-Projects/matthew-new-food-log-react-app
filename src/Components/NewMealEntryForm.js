@@ -1,14 +1,61 @@
-import React from "react";
+import React, { useState } from 'react';
 
-const NewMealEntryForm = ({ onSubmitHandler }) => {
+const NewMealEntryForm = () => {
+    const [meal, setMeal] = useState('');
+    const [time, setTime] = useState('');
+    const [date, setDate] = useState('');
+    const [price, setPrice] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        let newMealEntry = {
-
-        }
+    const handleMealChange = (event) => {
+        setMeal(event.target.value);
     };
-}
+
+    const handleTimeChange = (event) => {
+        setTime(event.target.value);
+    };
+
+    const handleDateChange = (event) => {
+        setDate(event.target.value);
+    };
+
+    const handlePriceChange = (event) => {
+        setPrice(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Here you can perform the logic to save the new meal entry, e.g. send it to an API or update a state.
+        // You can access the meal, time, date, and price values from the corresponding state variables.
+    };
+
+    return (
+        <div>
+            <h2>New Meal Entry Form</h2>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    Meal:
+                    <input type="text" value={meal} onChange={handleMealChange} />
+                </label>
+                <br />
+                <label>
+                    Time:
+                    <input type="time" value={time} onChange={handleTimeChange} />
+                </label>
+                <br />
+                <label>
+                    Date:
+                    <input type="date" value={date} onChange={handleDateChange} />
+                </label>
+                <br />
+                <label>
+                    Price:
+                    <input type="number" value={price} onChange={handlePriceChange} />
+                </label>
+                <br />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    );
+};
 
 export default NewMealEntryForm;

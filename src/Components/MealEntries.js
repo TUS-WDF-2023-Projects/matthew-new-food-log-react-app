@@ -39,7 +39,7 @@ const MealEntries = ({ meals, onDelete }) => {
                     ))}
                 </tbody>
             </Table>
-            <button>Add New Entry</button>
+            <Link to="/NewMealEntryForm"><button>Add New Entry</button></Link>
         </div>
     )
 };
