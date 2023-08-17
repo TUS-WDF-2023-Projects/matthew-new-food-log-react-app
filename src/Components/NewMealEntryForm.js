@@ -78,7 +78,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
                 </label>
                 <br />
                 <button type="submit">Submit</button>
-                <Link to="/">Cancel</Link>
+                <Link to="/"><button>Cancel</button></Link>
             </form>
         </div>
     );
