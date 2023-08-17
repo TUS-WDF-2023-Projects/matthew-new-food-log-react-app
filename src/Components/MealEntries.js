@@ -18,6 +18,7 @@ const MealEntries = ({ meals, onDelete }) => {
                         <th>Date</th>
                         <th>Time</th>
                         <th>Price</th>
+                        <th>Description</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -29,6 +30,7 @@ const MealEntries = ({ meals, onDelete }) => {
                             <td>{item.date}</td>
                             <td>{item.time}</td>
                             <td>{item.price}</td>
+                            <td>{item.description}</td>
                             <td>
                                 <Link to={`/SingleMealEntry/${item.id}`}><button className="btn-view">View</button></Link>
                                 <button className="btn btn-sm btn-danger" onClick={() => onDelete(item.id)}>Delete</button>

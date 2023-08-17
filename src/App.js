@@ -12,28 +12,32 @@ const meals = [
     meal: "Breakfast",
     date: "2023-08-15",
     time: "08:00",
-    price: "6.50"
+    price: "6.50",
+    description: "Cereal and Tea"
   },
   {
     id: 2,
     meal: "Lunch",
     date: "2023-08-15",
     time: "12:30",
-    price: "15.99"
+    price: "15.99",
+    description: "Sandwich and Tea"
   },
   {
     id: 3,
     meal: "Snack",
     date: "2023-08-15",
     time: "15:30",
-    price: "3.50"
+    price: "3.50",
+    description: "Fruit"
   },
   {
     id: 4,
     meal: "Dinner",
     date: "2023-08-15",
     time: "19:00",
-    price: "20.99"
+    price: "20.99",
+    description: "Chicken Pasta Bake"
   }
 ];
 

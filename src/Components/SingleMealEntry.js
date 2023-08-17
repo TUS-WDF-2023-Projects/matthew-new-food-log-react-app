@@ -68,6 +68,13 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                                 value={editedMeal.price}
                                 onChange={handleInputChange}
                             />
+                            <br />
+                            <label>Description: </label>
+                            <input type="text"
+                                name="meal-outline"
+                                value={editedMeal.description}
+                                onChange={handleInputChange}
+                            />
                         </div>
                         <button onClick={handleUpdateClick}>Update</button>
                         <Link to={"/"}><button>Cancel</button></Link>
@@ -75,10 +82,11 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                 </div>
             ) : (
                 <div>
-                    <p>{selectedMeal.meal} Contains...</p>
+                    <p>{selectedMeal.meal}</p>
                     <p>Date: {selectedMeal.date}</p>
                     <p>Time: {selectedMeal.time}</p>
                     <p>Price: {selectedMeal.price}</p>
+                    <p>Description : {selectedMeal.description}</p>
                     <button onClick={handleEditClick}>Edit</button>
                     <Link to="/"><button>Back to List</button></Link>
                 </div>

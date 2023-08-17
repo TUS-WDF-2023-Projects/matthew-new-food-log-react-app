@@ -6,6 +6,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
     const [time, setTime] = useState('');
     const [date, setDate] = useState('');
     const [price, setPrice] = useState('');
+    const [description, setDescription] = useState('');
 
     const navigate = useNavigate();
 
@@ -25,6 +26,10 @@ const NewMealEntryForm = ({ addNewMeal }) => {
         setPrice(event.target.value);
     };
 
+    const handleDescriptionChange = (event) => {
+        setDescription(event.target.value);
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
         // onSave({ meal, time, date, price });
@@ -36,6 +41,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
             time,
             date,
             price,
+            description,
         };
 
         // Call the addNewMeal function to save the new entry
@@ -47,6 +53,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
         setDate('');
         setTime('');
         setPrice('');
+        description('');
 
         // Navigate back to the home page ("/")
         navigate('/');
@@ -81,6 +88,11 @@ const NewMealEntryForm = ({ addNewMeal }) => {
                 <label>
                     Price:
                     <input type="number" value={price} onChange={handlePriceChange} />
+                </label>
+                <br />
+                <label>
+                    Description:
+                    <input type="text" value={description} onChange={handleDescriptionChange} />
                 </label>
                 <br />
                 <button type="submit">Submit</button>
