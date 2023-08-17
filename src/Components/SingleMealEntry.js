@@ -3,12 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 
 const SingleMealEntry = ({ meals, onUpdate }) => {
 
-    // const urlParameters = useParams();
     const { id } = useParams();
 
-    // let mealToDisplay = meals.find((item) => (
-    //     item.id === Number(urlParameters.mealID)
-    // ));
     const selectedMeal = meals.find(item => item.id === Number(id));
 
     const [editing, setEditing] = useState(false);
@@ -38,12 +34,13 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                     <form>
                         <div>
                             <label>Meal: </label>
-                            <input
-                                type="text"
-                                name="meal"
-                                value={editedMeal.meal}
-                                onChange={handleInputChange}
-                            />
+                            <select value={editedMeal.meal} onChange={handleInputChange}>
+                                <option value="">Select A Meal</option>
+                                <option value="Breakfast">Breakfast</option>
+                                <option value="Lunch">Lunch</option>
+                                <option value="Snack">Snack</option>
+                                <option value="Breakfast">Dinner</option>
+                            </select>
                         </div>
                         <div>
                             <label>Date: </label>

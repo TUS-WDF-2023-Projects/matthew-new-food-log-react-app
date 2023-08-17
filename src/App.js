@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import MealEntries from './Components/MealEntries';
 import NewMealEntryForm from './Components/NewMealEntryForm';
 import './Components/App.css';
