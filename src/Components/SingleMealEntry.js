@@ -33,8 +33,8 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                 <div className='entry-details'>
                     <form>
                         <div>
-                            <label>Meal: </label>
-                            <select value={editedMeal.meal} onChange={handleInputChange}>
+                            <label>Meal: </label><br />
+                            <select className='form-input' value={editedMeal.meal} onChange={handleInputChange}>
                                 <option value="">Select A Meal</option>
                                 <option value="Breakfast">Breakfast</option>
                                 <option value="Lunch">Lunch</option>
@@ -43,8 +43,8 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                             </select>
                         </div>
                         <div>
-                            <label>Date: </label>
-                            <input
+                            <label>Date: </label><br />
+                            <input className='form-input'
                                 type="text"
                                 name="date"
                                 value={editedMeal.date}
@@ -52,8 +52,8 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                             />
                         </div>
                         <div>
-                            <label>Time: </label>
-                            <input
+                            <label>Time: </label><br />
+                            <input className='form-input'
                                 type="text"
                                 name="time"
                                 value={editedMeal.time}
@@ -61,21 +61,21 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                             />
                         </div>
                         <div>
-                            <label>Price: </label>
-                            <input
+                            <label>Price: </label><br />
+                            <input className='form-input'
                                 type="text"
                                 name="price"
                                 value={editedMeal.price}
                                 onChange={handleInputChange}
                             />
                             <br />
-                            <label>Description: </label>
-                            <input type="text"
+                            <label>Description: </label><br />
+                            <input type="text" className='form-input'
                                 name="meal-outline"
                                 value={editedMeal.description}
                                 onChange={handleInputChange}
                             />
-                        </div>
+                        </div><br />
                         <button className='btn btn-primary' onClick={handleUpdateClick}>Update</button>
                         <Link to={"/"}><button className='btn btn-dark'>Cancel</button></Link>
                     </form>
