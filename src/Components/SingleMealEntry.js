@@ -71,7 +71,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                             <br />
                             <label>Description: </label><br />
                             <input type="text" className='form-input'
-                                name="meal-outline"
+                                name="description"
                                 value={editedMeal.description}
                                 onChange={handleInputChange}
                             />
