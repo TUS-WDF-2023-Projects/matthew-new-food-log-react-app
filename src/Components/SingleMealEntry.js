@@ -27,8 +27,8 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
     };
 
     return (
-        <div>
-            <h2>Meal Details</h2>
+        <div className='entry-details'>
+            <h2 className='centered-heading'>Meal Details</h2>
             {editing ? (
                 <div>
                     <form>

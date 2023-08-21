@@ -32,7 +32,7 @@ const MealEntries = ({ meals, onDelete }) => {
                             <td>{item.price}</td>
                             <td>{item.description}</td>
                             <td>
-                                <Link to={`/SingleMealEntry/${item.id}`}><button className="btn-view">View</button></Link>
+                                <Link to={`/SingleMealEntry/${item.id}`}><button className="btn btn-sm btn-primary">View</button></Link>
                                 <button className="btn btn-sm btn-danger" onClick={() => onDelete(item.id)}>Delete</button>
                             </td>
                         </tr>
