@@ -27,10 +27,10 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
     };
 
     return (
-        <div className='entry-details'>
+        <div>
             <h2 className='centered-heading'>Meal Details</h2>
             {editing ? (
-                <div>
+                <div className='entry-details'>
                     <form>
                         <div>
                             <label>Meal: </label>
@@ -76,18 +76,18 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                                 onChange={handleInputChange}
                             />
                         </div>
-                        <button onClick={handleUpdateClick}>Update</button>
-                        <Link to={"/"}><button>Cancel</button></Link>
+                        <button className='btn btn-primary' onClick={handleUpdateClick}>Update</button>
+                        <Link to={"/"}><button className='btn btn-dark'>Cancel</button></Link>
                     </form>
                 </div>
             ) : (
                 <div>
-                    <p>{selectedMeal.meal}</p>
+                    <p>Meal: {selectedMeal.meal}</p>
                     <p>Date: {selectedMeal.date}</p>
                     <p>Time: {selectedMeal.time}</p>
                     <p>Price: {selectedMeal.price}</p>
                     <p>Description : {selectedMeal.description}</p>
-                    <button className='btn btn-primary' onClick={handleEditClick}>Edit</button>
+                    <button className='btn btn-primary' onClick={handleEditClick}>Edit</button><br />
                     <Link to="/"><button className='btn btn-dark'>Back to Food Log</button></Link>
                 </div>
             )}
