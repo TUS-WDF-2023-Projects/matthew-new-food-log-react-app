@@ -95,8 +95,10 @@ const NewMealEntryForm = ({ addNewMeal }) => {
                 </label><br />
                 <input className='form-input' type="text" value={description} onChange={handleDescriptionChange} />
                 <br />
-                <button className='btn btn-primary' type="submit">Submit</button>
-                <Link to="/"><button className='btn btn-dark'>Cancel</button></Link>
+                <div className='btn-new-meal'>
+                    <button className='btn btn-primary' type="submit">Submit</button><br />
+                    <Link to="/"><button className='btn btn-dark'>Cancel</button></Link>
+                </div>
             </form>
         </div>
     );
