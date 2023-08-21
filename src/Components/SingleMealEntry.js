@@ -30,7 +30,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
         <div>
             <h2 className='centered-heading'>Meal Details</h2>
             {editing ? (
-                <div className='entry-details'>
+                <div className='entry-details' style="text-align: center;">
                     <form>
                         <div>
                             <label>Meal: </label><br />
