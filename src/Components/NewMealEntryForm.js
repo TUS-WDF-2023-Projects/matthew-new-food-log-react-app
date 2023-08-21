@@ -61,8 +61,8 @@ const NewMealEntryForm = ({ addNewMeal }) => {
     };
 
     return (
-        <div className='container'>
-            <h2>Add New Meal Entry</h2>
+        <div className='form-container'>
+            <h2 className='centered-heading'>Add New Meal Entry</h2>
             <form onSubmit={handleSubmit}>
                 <label>
                     Meal:

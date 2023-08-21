@@ -2,8 +2,15 @@
     margin-right: 10px;
 }
 
-.container {
-    float: center;
-    height: auto;
-    width: fit-content;
+.centered-heading {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
 }
