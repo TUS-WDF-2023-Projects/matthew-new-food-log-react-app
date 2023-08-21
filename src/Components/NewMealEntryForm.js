@@ -66,34 +66,34 @@ const NewMealEntryForm = ({ addNewMeal }) => {
             <form onSubmit={handleSubmit}>
                 <label>
                     Meal:
-                    <select className='form-input' type="text" value={meal} onChange={handleMealChange}>
-                        <option value="">Select A Meal</option>
-                        <option value="Breakfast">Breakfast</option>
-                        <option value="Lunch">Lunch</option>
-                        <option value="Snack">Snack</option>
-                        <option value="Dinner">Dinner</option>
-                    </select>
-                </label>
+                </label><br />
+                <select className='form-input' type="text" value={meal} onChange={handleMealChange}>
+                    <option value="">Select A Meal</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Snack">Snack</option>
+                    <option value="Dinner">Dinner</option>
+                </select>
                 <br />
                 <label>
                     Time:
-                    <input className='form-input' type="time" value={time} onChange={handleTimeChange} />
-                </label>
+                </label><br />
+                <input className='form-input' type="time" value={time} onChange={handleTimeChange} />
                 <br />
                 <label>
                     Date:
-                    <input className='form-input' type="date" value={date} onChange={handleDateChange} />
-                </label>
+                </label><br />
+                <input className='form-input' type="date" value={date} onChange={handleDateChange} />
                 <br />
                 <label>
                     Price:
-                    <input className='form-input' type="number" value={price} onChange={handlePriceChange} />
-                </label>
+                </label><br />
+                <input className='form-input' type="number" value={price} onChange={handlePriceChange} />
                 <br />
                 <label>
                     Description:
-                    <input className='form-input' type="text" value={description} onChange={handleDescriptionChange} />
-                </label>
+                </label><br />
+                <input className='form-input-desc' type="text" value={description} onChange={handleDescriptionChange} />
                 <br />
                 <button type="submit">Submit</button>
                 <Link to="/"><button>Cancel</button></Link>

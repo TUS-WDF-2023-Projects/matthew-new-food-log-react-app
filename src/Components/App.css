@@ -17,7 +17,14 @@
 }
 
 .form-input {
-    width: 300px;
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-input-desc {
+    width: 500px;
+    height: 150px;
     padding: 10px;
     margin-bottom: 10px;
 }
