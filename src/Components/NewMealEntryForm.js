@@ -53,7 +53,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
         setDate('');
         setTime('');
         setPrice('');
-        description('');
+        setDescription('');
 
         // Navigate back to the home page ("/")
         navigate('/');
