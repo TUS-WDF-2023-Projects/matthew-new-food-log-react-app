@@ -12,6 +12,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 70vh;
 
+}
+
+.form-input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
 }

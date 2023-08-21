@@ -66,7 +66,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
             <form onSubmit={handleSubmit}>
                 <label>
                     Meal:
-                    <select type="text" value={meal} onChange={handleMealChange}>
+                    <select className='form-input' type="text" value={meal} onChange={handleMealChange}>
                         <option value="">Select A Meal</option>
                         <option value="Breakfast">Breakfast</option>
                         <option value="Lunch">Lunch</option>
@@ -77,22 +77,22 @@ const NewMealEntryForm = ({ addNewMeal }) => {
                 <br />
                 <label>
                     Time:
-                    <input type="time" value={time} onChange={handleTimeChange} />
+                    <input className='form-input' type="time" value={time} onChange={handleTimeChange} />
                 </label>
                 <br />
                 <label>
                     Date:
-                    <input type="date" value={date} onChange={handleDateChange} />
+                    <input className='form-input' type="date" value={date} onChange={handleDateChange} />
                 </label>
                 <br />
                 <label>
                     Price:
-                    <input type="number" value={price} onChange={handlePriceChange} />
+                    <input className='form-input' type="number" value={price} onChange={handlePriceChange} />
                 </label>
                 <br />
                 <label>
                     Description:
-                    <input type="text" value={description} onChange={handleDescriptionChange} />
+                    <input className='form-input' type="text" value={description} onChange={handleDescriptionChange} />
                 </label>
                 <br />
                 <button type="submit">Submit</button>
