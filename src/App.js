@@ -55,7 +55,9 @@ function App() {
     setData([...data, newMealEntry]);
   };
 
+  // This function is responsible for deleting an entry
   const DeleteEntry = (entryID) => {
+    // The 'filter' function is called to create a new array of entries
     let updatedEntries = data.filter((entry) => (entry.id !== entryID));
     setData(updatedEntries);
   };
