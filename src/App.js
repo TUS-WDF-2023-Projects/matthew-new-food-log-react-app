@@ -43,6 +43,7 @@ const meals = [
 ];
 
 function App() {
+  // The 'useState' hook returns an array with two elements - 'data' (current value of the state) and 'setData' (function that can be used to update the state)
   const [data, setData] = useState(meals);
 
   const addNewMeal = (newMealEntry) => {
