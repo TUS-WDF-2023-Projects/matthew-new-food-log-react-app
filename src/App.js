@@ -45,7 +45,7 @@ const meals = [
 function App() {
   // The 'useState' hook returns an array with two elements - 'data' (current value of the state) and 'setData' (function that can be used to update the state)
   const [data, setData] = useState(meals);
-
+  // This function is adding a new meal to the existing array
   const addNewMeal = (newMealEntry) => {
 
     // Generate a random number between 1 and 100 
