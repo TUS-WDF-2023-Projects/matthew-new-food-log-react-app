@@ -62,10 +62,14 @@ function App() {
     setData(updatedEntries);
   };
 
+  // This code declares a variable named 'updatedMeals' which holds the updated data after the meal entry has been updated
   const updateMeal = (updatedMeal) => {
+    // The 'map' function is called on the data array to create a new array of meals
     const updatedMeals = data.map((meal) =>
+      // The function checks wheather the 'id' of the meal matches the id of the the 'updatedMeal'
       meal.id === updatedMeal.id ? updatedMeal : meal
     );
+    // This code is used to update the state of the 'updatedMeals' array
     setData(updatedMeals);
   }
 
