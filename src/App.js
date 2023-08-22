@@ -6,6 +6,7 @@ import NewMealEntryForm from './Components/NewMealEntryForm';
 import './Components/App.css';
 import SingleMealEntry from './Components/SingleMealEntry';
 
+// This is an array called 'meals' which contains objects representing different meals.
 const meals = [
   {
     id: 1,
