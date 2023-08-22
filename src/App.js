@@ -51,7 +51,7 @@ function App() {
     // Generate a random number between 1 and 100 
     let randomID = Math.floor(Math.random() * 100) + 1
     newMealEntry.id = randomID;
-
+    // This code updates the state by adding a new entry to the array
     setData([...data, newMealEntry]);
   };
 
