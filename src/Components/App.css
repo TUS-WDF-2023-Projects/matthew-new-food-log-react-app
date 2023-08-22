@@ -26,9 +26,9 @@
     text-align: center;
 }
 
-.btn-container {
-    gap: 10px;
-}
+/* .btn-container {
+    margin: 10px;
+} */
 
 .btn-new-meal {
     gap: 10px;
