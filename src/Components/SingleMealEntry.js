@@ -39,7 +39,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                     <form>
                         <div>
                             <label>Meal: </label><br />
-                            <select className='form-input' value={editedMeal.meal} onChange={handleInputChange}>
+                            <select className='form-input' name='meal' value={editedMeal.meal} onChange={handleInputChange}>
                                 <option value="">Select A Meal</option>
                                 <option value="Breakfast">Breakfast</option>
                                 <option value="Lunch">Lunch</option>
