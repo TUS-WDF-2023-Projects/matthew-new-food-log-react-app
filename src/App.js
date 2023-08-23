@@ -78,7 +78,7 @@ function App() {
     <Router>
       <header className='header-links'>
         <Link to="/">Home</Link>
-        <Link to="/About">About</Link>
+        <Link to="/about">About</Link>
       </header>
       <div>
         <nav>
@@ -97,7 +97,7 @@ function App() {
           <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} onUpdate={updateMeal} />} />
           <Route path="/NewMealEntryForm" element={<NewMealEntryForm />} />
           <Route path='/'>Home</Route>
-          <Route path='/About'>About</Route>
+          <Route path='/about'>About</Route>
         </Routes>
       </div>
       {/* <MealEntries meals={meals} onDelete={DeleteEntry} /> */}
