@@ -65,36 +65,46 @@ const NewMealEntryForm = ({ addNewMeal }) => {
         <div className='form-container'>
             <h2 className='centered-heading'>Add New Meal Entry</h2>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Meal:
-                </label><br />
-                <select className='form-input' type="text" value={meal} onChange={handleMealChange}>
-                    <option value="">Select A Meal</option>
-                    <option value="Breakfast">Breakfast</option>
-                    <option value="Lunch">Lunch</option>
-                    <option value="Snack">Snack</option>
-                    <option value="Dinner">Dinner</option>
-                </select>
+                <div className='form-group'>
+                    <label>
+                        Meal:
+                    </label><br />
+                    <select className='form-input' type="text" value={meal} onChange={handleMealChange}>
+                        <option value="">Select A Meal</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Snack">Snack</option>
+                        <option value="Dinner">Dinner</option>
+                    </select>
+                </div>
                 <br />
-                <label>
-                    Time:
-                </label><br />
-                <input className='form-input' type="time" value={time} onChange={handleTimeChange} />
+                <div className='form-group'>
+                    <label>
+                        Time:
+                    </label><br />
+                    <input className='form-input' type="time" value={time} onChange={handleTimeChange} />
+                </div>
                 <br />
-                <label>
-                    Date:
-                </label><br />
-                <input className='form-input' type="date" value={date} onChange={handleDateChange} />
+                <div className='form-group'>
+                    <label>
+                        Date:
+                    </label><br />
+                    <input className='form-input' type="date" value={date} onChange={handleDateChange} />
+                </div>
                 <br />
-                <label>
-                    Price:
-                </label><br />
-                <input className='form-input' type="number" value={price} onChange={handlePriceChange} />
+                <div className='form-group'>
+                    <label>
+                        Price:
+                    </label><br />
+                    <input className='form-input' type="number" value={price} onChange={handlePriceChange} />
+                </div>
                 <br />
-                <label>
-                    Description:
-                </label><br />
-                <input className='form-input' type="text" value={description} onChange={handleDescriptionChange} />
+                <div className='form-group'>
+                    <label>
+                        Description:
+                    </label><br />
+                    <input className='form-input' type="text" value={description} onChange={handleDescriptionChange} />
+                </div>
                 <br />
                 <div className='btn-new-meal'>
                     <button className='btn btn-primary' type="submit">Submit</button><br />
