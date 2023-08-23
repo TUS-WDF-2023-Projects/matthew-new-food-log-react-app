@@ -1,1 +1,3 @@
-<h2>This is the About Page</h2>
+import React from "react";
+
+<h2>About</h2>
