@@ -9,6 +9,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
     // This code uses the 'find' method to locate a meal object within the array of meal entries
     const selectedMeal = meals.find(item => item.id === Number(id));
 
+    // This code is responsible for managing the editing for the meal entry
     const [editing, setEditing] = useState(false);
     const [editedMeal, setEditedMeal] = useState(selectedMeal);
 
