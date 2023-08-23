@@ -95,6 +95,7 @@ function App() {
           <Route path="/NewMealEntryForm" element={<NewMealEntryForm addNewMeal={addNewMeal} />} />
           <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} onUpdate={updateMeal} />} />
           <Route path="/NewMealEntryForm" element={<NewMealEntryForm />} />
+          <Route path='/'>Home</Route>
         </Routes>
       </div>
       {/* <MealEntries meals={meals} onDelete={DeleteEntry} /> */}
