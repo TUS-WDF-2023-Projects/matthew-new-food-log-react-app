@@ -32,7 +32,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
     };
 
     return (
-        <div>
+        <div style={{ textAlign: 'center' }}>
             <h2 className='centered-heading'>Meal Details</h2>
             {editing ? (
                 <div className='entry-details'>
