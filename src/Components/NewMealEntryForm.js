@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+// This code renders a form that allows users to input data for a new meal entry
 const NewMealEntryForm = ({ addNewMeal }) => {
     const [meal, setMeal] = useState('');
     const [time, setTime] = useState('');
@@ -35,7 +36,6 @@ const NewMealEntryForm = ({ addNewMeal }) => {
         // onSave({ meal, time, date, price });
 
         // Create a new Object Entry
-
         const newEntry = {
             meal,
             time,
@@ -48,7 +48,6 @@ const NewMealEntryForm = ({ addNewMeal }) => {
         addNewMeal(newEntry);
 
         // Reset fields
-
         setMeal('');
         setDate('');
         setTime('');
