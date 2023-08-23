@@ -11,7 +11,7 @@ const MealEntries = ({ meals, onDelete }) => {
     return (
         <div className="text-center">
             <h1>Matthew's Food Log</h1><br />
-            <Table className="table-component" striped bordered>
+            <Table className="table-component table-responsive" striped bordered>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -26,13 +26,13 @@ const MealEntries = ({ meals, onDelete }) => {
                 <tbody>
                     {meals.map((item) => (
                         <tr key={item.id}>
-                            <td>{item.id}</td>
-                            <td>{item.meal}</td>
-                            <td>{item.date}</td>
-                            <td>{item.time}</td>
-                            <td>{item.price}</td>
-                            <td>{item.description}</td>
-                            <td>
+                            <td className="col-1 col-sm-1 col-md-1">{item.id}</td>
+                            <td className="col-2 col-sm-2 col-md-2">{item.meal}</td>
+                            <td className="col-2 col-sm-2 col-md-2">{item.date}</td>
+                            <td className="col-2 col-sm-1 col-md-1">{item.time}</td>
+                            <td className="col-1 col-sm-1 col-md-1">{item.price}</td>
+                            <td className="col-3 col-sm-3 col-md-3">{item.description}</td>
+                            <td className="col-3 col-sm-3 col-md-2">
                                 <div className="btn-container">
                                     <Link to={`/SingleMealEntry/${item.id}`}><button className="btn btn-sm btn-primary" style={{ margin: '0 10px', display: 'inline-block' }}>View</button></Link>
                                     <button className="btn btn-sm btn-danger" onClick={() => onDelete(item.id)}>Delete</button>
