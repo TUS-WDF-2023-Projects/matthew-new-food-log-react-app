@@ -36,8 +36,14 @@
 
 .header-links {
     text-align: center;
+    padding-top: 30px;
 }
 
 .about-info {
     text-align: center;
+}
+
+.header-links {
+    background-color: white;
+    height: 100px;
 }
