@@ -13,6 +13,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
     const [editing, setEditing] = useState(false);
     const [editedMeal, setEditedMeal] = useState(selectedMeal);
 
+    // This code handles the EditClick by setting 'Editing' to true
     const handleEditClick = () => {
         setEditing(true);
     };
