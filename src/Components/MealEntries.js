@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 
+// This is a functional component that uses the 'handleDelete' function to handle the deletion of an entry 
 const MealEntries = ({ meals, onDelete }) => {
     const handleDelete = (e) => {
         onDelete(Number(e.target.value));
