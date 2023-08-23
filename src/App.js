@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import MealEntries from './Components/MealEntries';
 import NewMealEntryForm from './Components/NewMealEntryForm';
 import './Components/App.css';
@@ -76,7 +76,8 @@ function App() {
   return (
     <Router>
       <header>
-
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
       </header>
       <div>
         <nav>
