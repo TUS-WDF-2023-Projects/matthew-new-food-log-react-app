@@ -18,6 +18,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
         setEditing(true);
     };
 
+    // This code handles user input changes when the meal details are being edited
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setEditedMeal((prevMeal) => ({ ...prevMeal, [name]: value }));
