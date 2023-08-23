@@ -81,7 +81,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                                 onChange={handleInputChange}
                             />
                         </div><br />
-                        <button className='btn btn-primary' onClick={handleUpdateClick}>Update</button>
+                        <button className='btn btn-primary' onClick={handleUpdateClick} style={{ margin: '0 10px', display: 'inline-block' }}>Update</button>
                         <Link to={"/"}><button className='btn btn-dark'>Cancel</button></Link>
                     </form>
                 </div>
