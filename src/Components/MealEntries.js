@@ -34,7 +34,7 @@ const MealEntries = ({ meals, onDelete }) => {
                             <td>{item.description}</td>
                             <td>
                                 <div className="btn-container">
-                                    <Link to={`/SingleMealEntry/${item.id}`}><button className="btn btn-sm btn-primary">View</button></Link>
+                                    <Link to={`/SingleMealEntry/${item.id}`}><button className="btn btn-sm btn-primary" style={{ margin: '0 10px', display: 'inline-block' }}>View</button></Link>
                                     <button className="btn btn-sm btn-danger" onClick={() => onDelete(item.id)}>Delete</button>
                                 </div>
                             </td>
