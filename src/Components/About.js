@@ -1,6 +1,6 @@
 import React from "react";
 
-export const About = () => {
+const About = () => {
     return (
         <h2>This is the About Page</h2>
     )
