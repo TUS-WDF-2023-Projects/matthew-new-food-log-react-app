@@ -92,7 +92,7 @@ const SingleMealEntry = ({ meals, onUpdate }) => {
                     <p>Time: {selectedMeal.time}</p>
                     <p>Price: {selectedMeal.price}</p>
                     <p>Description : {selectedMeal.description}</p>
-                    <button className='btn btn-primary' onClick={handleEditClick}>Edit</button><br />
+                    <button className='btn btn-primary' onClick={handleEditClick} style={{ margin: '0 10px', display: 'inline-block' }}>Edit</button>
                     <Link to="/"><button className='btn btn-dark'>Back to Food Log</button></Link>
                 </div>
             )}
