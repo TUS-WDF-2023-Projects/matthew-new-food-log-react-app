@@ -5,7 +5,7 @@ import MealEntries from './Components/MealEntries';
 import NewMealEntryForm from './Components/NewMealEntryForm';
 import './Components/App.css';
 import SingleMealEntry from './Components/SingleMealEntry';
-import './Components/About';
+import About from './Components/About';
 
 // This is an array called 'meals' which contains objects representing different meals.
 const meals = [
@@ -97,11 +97,15 @@ function App() {
           <Route path="/SingleMealEntry/:id" element={<SingleMealEntry meals={data} onUpdate={updateMeal} />} />
           <Route path="/NewMealEntryForm" element={<NewMealEntryForm />} />
           <Route path='/'>Home</Route>
-          <Route path='/about'>About</Route>
+          <Route path="/about" element={
+            <About>
+
+            </About>}
+          />
         </Routes>
       </div>
       {/* <MealEntries meals={meals} onDelete={DeleteEntry} /> */}
-    </Router>
+    </Router >
 
   )
 };
