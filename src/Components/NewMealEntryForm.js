@@ -12,6 +12,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
     // The 'useNavigate' hook is used to navigate from page to page
     const navigate = useNavigate();
 
+    // This code is responsible for handling changes within the form
     const handleMealChange = (event) => {
         setMeal(event.target.value);
     };
