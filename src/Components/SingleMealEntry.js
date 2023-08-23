@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
+// This function displays a single meal entry based on a URL Parameter. It uses the 'useParams' hook
 const SingleMealEntry = ({ meals, onUpdate }) => {
 
     const { id } = useParams();
 
+    // This code uses the 'find' method to locate a meal object within the array of meal entries
     const selectedMeal = meals.find(item => item.id === Number(id));
 
     const [editing, setEditing] = useState(false);
