@@ -107,7 +107,7 @@ const NewMealEntryForm = ({ addNewMeal }) => {
                 </div>
                 <br />
                 <div className='btn-new-meal'>
-                    <button className='btn btn-primary' type="submit">Submit</button><br />
+                    <button className='btn btn-primary' type="submit" style={{ margin: '0 10px', display: 'inline-block' }}>Submit</button>
                     <Link to="/"><button className='btn btn-dark'>Cancel</button></Link>
                 </div>
             </form>
