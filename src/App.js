@@ -77,7 +77,7 @@ function App() {
   return (
     <Router>
       <header className='header-links'>
-        <Link to="/">Home</Link>
+        <Link to="/" style={{ margin: '0 10px', display: 'inline-block' }}>Home</Link>
         <Link to="/about">About</Link>
       </header>
       <div>
