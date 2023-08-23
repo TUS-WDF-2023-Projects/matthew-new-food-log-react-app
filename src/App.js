@@ -76,7 +76,7 @@ function App() {
 
   return (
     <Router>
-      <header>
+      <header className='header-links'>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
       </header>
